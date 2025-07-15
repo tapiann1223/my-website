@@ -1,0 +1,14 @@
+# .gitignore
+
+node_modules/
+.DS_Store
+.env
+
+# 環境変数ファイルなど秘密情報
+.env
+
+# macOS の不要ファイル
+.DS_Store
+
+# VSCode の設定ファイル（必要なければ）
+.vscode/

@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3; /* 背景色 */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* ホームからニュースを1直線状に */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(23, 106, 230);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ce3434;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h2 {
+    color: #9c2f2f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 50%; /* 画像の幅を50%に設定（親要素に合わせる） */
+    height: auto;   /* 高さを自動調整 */
+    border: 2px solid #83f083; /* 画像に枠を追加 */
+}
+
+/* コメントセクションのスタイル */
+#commentForm {
+    margin-bottom: 20px;
+}
+
+#commentForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#commentForm input {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm textarea {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#commentForm button:hover {
+    background-color: #555;
+}
+
+#commentList div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* 削除ボタンのスタイル */
+#commentList button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#commentList button:hover {
+    background-color: darkred;
+}
+
+/* ニュース記事のスタイル */
+#newsList div {
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 8px; /* 角を丸くする */
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgb(86, 139, 255);
+}
+
+#newsList h3 {
+    margin-top: 0;
+    font-size: 1.8em; /* タイトルの文字サイズを大きくする */
+    cursor: pointer; /* クリック可能に見せるためのスタイル */
+}
+
+#newsList p {
+    margin: 20px 0;
+    font-size: 1.2em; /* 文字サイズを大きくする */
+}
+
+#newsForm {
+    margin-bottom: 20px;
+}
+
+#newsForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#newsForm input, #newsForm textarea {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#newsForm button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsForm button:hover {
+    background-color: #555;
+}
+
+#newsDetail.hidden {
+    display: none;
+}
+
+#newsDetail {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

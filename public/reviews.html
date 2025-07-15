@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ゲーム解説サイトへようこそ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="game.html">ゲーム紹介</a></li>
+                <li><a href="reviews.html">レビュー</a></li>
+                <li><a href="news.html">ニュース</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <section id="comments">
+            <h2>コメント</h2>
+            <form id="commentForm">
+                <label for="username">名前:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="comment">コメント:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+            <div id="commentList"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ゲーム解説サイト</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
